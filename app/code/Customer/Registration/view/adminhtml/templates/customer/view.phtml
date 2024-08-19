@@ -1,0 +1,24 @@
+<?php
+/** @var \Customer\Registration\Block\Adminhtml\Customer\View $block */
+$registrations = $block->getRegistrations();
+?>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($registrations as $registration): ?>
+            <tr>
+                <td><?php echo $registration->getId(); ?></td>
+                <td><?php echo $registration->getName(); ?></td>
+                <td><?php echo $registration->getDob(); ?></td>
+                <td><?php echo $registration->getEmail(); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

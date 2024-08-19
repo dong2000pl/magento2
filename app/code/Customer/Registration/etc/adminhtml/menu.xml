@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Customer_Registration::menu" title="Customer View" 
+        module="Customer_Registration" sortOrder="10" 
+        parent="Magento_Backend::content" resource="Customer_Registration::customer_view" action="adminhtml/customer/view" />
+    </menu>
+</config>

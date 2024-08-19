@@ -1,0 +1,26 @@
+
+<head>
+    <title>Form đăng ký</title>
+</head>
+<body>
+<form action="<?php echo $block->getFormAction(); ?>" method="post">
+    <input type="hidden" name="form_key" value="<?php echo $block->getFormKey(); ?>" />
+    <div>
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="dob">Ngày sinh:</label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+</br>
+    <div>
+        <button type="submit">Đăng ký</button>
+    </div>
+</form>
+</br>
+</body>
