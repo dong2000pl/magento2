@@ -3,7 +3,9 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Customer_Registration::menu" title="Menu Title" sortOrder="10"/>
+                <resource id="Customer_Registration::title_menu" title="Menu Customer" sortOrder="10"/>
+                <resource id="Customer_Registration::manage_posts" title="Manage Posts"
+                              sortOrder="2" />
             </resource>
         </resources>
     </acl>

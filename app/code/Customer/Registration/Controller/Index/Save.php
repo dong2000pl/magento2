@@ -1,12 +1,12 @@
 <?php
-namespace YourVendor\RegistrationForm\Controller\Index;
+namespace Customer\Registration\Controller\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\Controller\ResultFactory;
 use Customer\Registration\Model\RegistrationFactory;
 
-class Post extends Action
+class Save extends Action
 {
     protected $registrationFactory;
 
